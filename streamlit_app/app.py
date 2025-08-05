@@ -4,10 +4,12 @@ import numpy as np
 import streamlit as st
 from matplotlib import pyplot as plt
 from catboost import CatBoostClassifier, Pool
+import os
 
 # === Paths ===
-MODEL_PATH = "model/catboost_model.cbm"
-DATA_PATH = "data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
+
+MODEL_PATH = os.path.join(os.getcwd(), "model", "catboost_model.cbm")
+DATA_PATH = os.path.join(os.getcwd(), "data", "WA_Fn-UseC_-Telco-Customer-Churn.csv")
 
 # === Categorical columns ===
 CATEGORICAL_COLS = ['gender', 'Partner', 'Dependents', 'PhoneService',
@@ -17,7 +19,7 @@ CATEGORICAL_COLS = ['gender', 'Partner', 'Dependents', 'PhoneService',
                     'PaperlessBilling', 'PaymentMethod']
 
 # === Streamlit config ===
-st.set_page_config(page_title="Churn Project")
+st.set_page_config(page_title="Churn Prediction Project")
 
 @st.cache_data
 def load_data():

@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  fastapi:
+    build: .
+    container_name: churn-fastapi
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  streamlit:
+    build: .
+    container_name: churn-streamlit
+    depends_on:
+      - fastapi
+    command: streamlit run streamlit_app/app.py --server.port=8501 --server.enableCORS=false
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app

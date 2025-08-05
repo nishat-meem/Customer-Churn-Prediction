@@ -9,3 +9,8 @@ shap
 streamlit
 flask
 jupyter
+fastapi
+uvicorn
+catboost
+pandas
+pydantic
