@@ -135,16 +135,12 @@ Each customer gets a visual breakdown via waterfall plot.
 
 ---
 
-## ✨ Future Improvements
+## Some images from the project
+### Streamlit
+![Streamlit Overview](photos/streamlit1.png)
+![Actual-Prediction](photos/streamlit2.png)
+![SHAP](photos/SHAP.png)
+### API
+![FastAPI](photos/fastapi1.png)
+![FastAPI](photos/fastapi2.png)
 
-- [ ] Add user authentication to dashboard
-- [ ] Upload CSV and get predictions in batch
-- [ ] Deploy via Render or AWS
-- [ ] Add automated tests for API
-
-
----
-
-## 📄 License
-
-MIT License. Feel free to use, improve, or contribute!
