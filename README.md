@@ -1,6 +1,8 @@
 # 📉 Customer Churn Prediction with Streamlit, FastAPI, and CatBoost
 
-This project predicts the likelihood of a customer churning based on service usage patterns and demographic data. It features:
+This project predicts the likelihood of a customer churning based on service usage patterns and demographic data.
+Technologies used - Python, CatBoost, SHAP, FastAPI, Streamlit, Docker
+It features:
 
 - 🧠 A CatBoost classification model
 - 🌐 A REST API built with FastAPI
